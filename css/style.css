@@ -20,6 +20,10 @@
   margin: 0px;
   padding: 0px;
 }
+.clearfix {
+  float: none;
+  clear: both;
+}
 #header {
   margin: 10px auto;
   margin-left: 10px;
@@ -45,7 +49,6 @@
 }
 
 #list ul li {
-  font-size: 20px;
   display: inline-block;
   margin: 0px 28px 0px 28px;
   letter-spacing: 1px;
@@ -60,15 +63,17 @@
   text-decoration: none;
   list-style: none;
   font-family: "Nexa_Light";
+  font-size: 20px;
   transition: all 300ms;
 }
 #list ul li a:hover {
   color: #d51010;
-  transform: scale(1.2, 1.2);
+
+  transform: scale(1.5, 1.5);
 }
 
 #container {
-  width: 98.5%;
+  width: 98.9%;
   display: block;
   margin: 0px auto;
 }
@@ -76,6 +81,108 @@
 #container #slide {
   width: 100%;
   height: 360px;
-  background: url("../img/318.jpg");
-  background-position: -169px -253px;
+  background: url("../img/slide.jpg") no-repeat;
+  background-size: auto;
+  background-position: -10px -285px;
+  background-size: cover;
+}
+
+#container #lateral {
+  display: block;
+  float: left;
+  width: 15%;
+  background: #2d2c2c;
+  min-height: 783px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+#container #lateral h2 {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 20px;
+  text-align: center;
+  height: 86px;
+  color: white;
+  background: #d51010;
+  font-family: "Nexa_Light";
+  font-size: 32px;
+  line-height: 86px;
+  border: 5px solid #8f8484;
+  border-radius: 33px;
+}
+
+#container #lateral #indice {
+  display: block;
+  float: left;
+  width: 90%;
+  margin: 0px auto;
+  margin-left: 13px;
+  margin-top: 30px;
+  background: transparent;
+}
+#container #lateral #indice ul li {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #8f8484;
+}
+#container #lateral #indice ul li a {
+  display: block;
+  font-size: 33px;
+  font-family: "Nexa_Light";
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  transition: all 300ms;
+}
+#container #lateral #indice ul li:hover a {
+  color: #d51010;
+  transform: translate(350px, 0);
+  -webkit-transform: translate(20px, 0); /** Chrome & Safari **/
+}
+
+/* IMAGENES DERECHA */
+
+#container .section {
+  display: block;
+  float: left;
+  width: 83.9%;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #2d2c2c;
+  border-radius: 15px;
+  min-height: 783px;
+}
+#container .section #subtitulo {
+  width: 90%;
+  text-align: center;
+  display: block;
+  margin-left: 78px;
+}
+#container .section h2 {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*   margin-left: 75px; */
+  padding: 25px;
+  background: #d51010;
+  text-align: center;
+  color: white;
+  font-family: "Nexa_Light";
+  font-size: 32px;
+  border: 5px solid #8f8484;
+  border-radius: 33px;
+}
+#container .section #caja_foto {
+  width: 100%;
+  text-align: center;
+}
+#container .section #caja_foto .fotos {
+  display: inline-block;
+}
+
+#container .section .fotos img {
+  height: 280px;
+  width: 280px;
+  margin: 20px 20px 20px 45px;
 }
