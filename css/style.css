@@ -3,14 +3,17 @@
   font-family: Nexa;
   src: url("../css/fonts/Nexa\ Bold.otf");
 }
+
 @font-face {
   font-family: Nexa_Light;
   src: url("../css/fonts/Nexa\ Light.otf");
 }
+
 @font-face {
   font-family: SG_Alternative;
   src: url("../css/fonts/SG_Alternative_High-Alt.otf");
 }
+
 @font-face {
   font-family: SG_Alternative_Mid;
   src: url("../css/fonts/SG_Alternative_Mid.otf");
@@ -20,18 +23,21 @@
   margin: 0px;
   padding: 0px;
 }
+
 .clearfix {
   float: none;
   clear: both;
 }
+
 #header {
   margin: 10px auto;
-  margin-left: 10px;
+  margin-left: 8px;
   height: 75px;
-  width: 98.5%;
+  width: 98.1%;
   background: #2d2c2c;
   color: white;
 }
+
 .wrap h1 {
   display: block;
   float: left;
@@ -54,9 +60,11 @@
   letter-spacing: 1px;
   line-height: 75px;
 }
+
 #list ul li:last-child {
   margin-right: 40px;
 }
+
 #list ul li a {
   display: block;
   color: white;
@@ -66,6 +74,7 @@
   font-size: 20px;
   transition: all 300ms;
 }
+
 #list ul li a:hover {
   color: #d51010;
 
@@ -80,34 +89,40 @@
 
 #container #slide {
   width: 100%;
-  height: 360px;
+  height: 343px;
   background: url("../img/slide.jpg") no-repeat;
   background-size: auto;
   background-position: -10px -285px;
   background-size: cover;
 }
 
+#container .container_section {
+  background: transparent;
+  width: 100%;
+  height: 570px;
+  margin-top: 20px;
+}
+
 #container #lateral {
   display: block;
   float: left;
-  width: 15%;
+  width: 20%;
   background: #2d2c2c;
-  min-height: 783px;
-  margin-top: 20px;
+  min-height: 550px;
   border-radius: 15px;
 }
 
 #container #lateral h2 {
-  width: 90%;
+  width: 85%;
   margin: 0px auto;
   margin-top: 20px;
   text-align: center;
-  height: 86px;
+  height: 70px;
   color: white;
   background: #d51010;
   font-family: "Nexa_Light";
   font-size: 32px;
-  line-height: 86px;
+  line-height: 74px;
   border: 5px solid #8f8484;
   border-radius: 33px;
 }
@@ -121,23 +136,27 @@
   margin-top: 30px;
   background: transparent;
 }
+
 #container #lateral #indice ul li {
   margin-bottom: 30px;
   border-bottom: 2px solid #8f8484;
+  list-style: none;
 }
+
 #container #lateral #indice ul li a {
   display: block;
-  font-size: 33px;
+  font-size: 28px;
   font-family: "Nexa_Light";
   color: white;
-  list-style: none;
   text-decoration: none;
   transition: all 300ms;
 }
+
 #container #lateral #indice ul li:hover a {
   color: #d51010;
   transform: translate(350px, 0);
-  -webkit-transform: translate(20px, 0); /** Chrome & Safari **/
+  -webkit-transform: translate(20px, 0);
+  /** Chrome & Safari **/
 }
 
 /* IMAGENES DERECHA */
@@ -145,25 +164,26 @@
 #container .section {
   display: block;
   float: left;
-  width: 83.9%;
+  width: 77.7%;
   margin: 0px auto;
-  margin-top: 20px;
   margin-left: 20px;
   background: #2d2c2c;
   border-radius: 15px;
-  min-height: 783px;
+  min-height: 550px;
 }
+
 #container .section #subtitulo {
-  width: 90%;
+  width: 96.6%;
   text-align: center;
   display: block;
-  margin-left: 78px;
+  margin-left: 18px;
 }
+
 #container .section h2 {
   display: block;
+  height: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  /*   margin-left: 75px; */
   padding: 25px;
   background: #d51010;
   text-align: center;
@@ -172,17 +192,88 @@
   font-size: 32px;
   border: 5px solid #8f8484;
   border-radius: 33px;
+  line-height: 20px;
 }
+
 #container .section #caja_foto {
   width: 100%;
   text-align: center;
 }
+
 #container .section #caja_foto .fotos {
   display: inline-block;
 }
 
 #container .section .fotos img {
-  height: 280px;
-  width: 280px;
-  margin: 20px 20px 20px 45px;
+  height: 160px;
+  width: 160px;
+  margin: 15px 15px 15px 15px;
+}
+
+#container #nosotros {
+  background: #d51010;
+  width: 98.6%;
+  height: 230px;
+  text-align: center;
+  font-family: "Nexa_Light";
+  border: 5px solid #8f8484;
+  border-radius: 33px;
+  color: white;
+}
+
+#container #nosotros h3 {
+  font-size: 32px;
+  padding-top: 20px;
+}
+
+#container #nosotros p {
+  font-size: 25px;
+  padding-top: 20px;
+  width: 94%;
+  margin-left: 25px;
+}
+
+#footer {
+  margin-top: 20px;
+  height: 320px;
+  background: #2d2c2c;
+  color: #aaa2a2;
+}
+#footer .contacto {
+  display: block;
+  margin-top: 20px;
+  width: 50%;
+  float: left;
+}
+#footer .contacto ul {
+  margin-left: 60px;
+  list-style: none;
+}
+#footer .contacto h2 {
+  font-size: 32px;
+  font-family: "Nexa_Light";
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#footer .contacto p {
+  font-size: 20px;
+  font-family: "SG_Alternative_Mid";
+  margin-bottom: 20px;
+}
+#footer iframe {
+  display: block;
+  width: 46%;
+  margin: 30px 20px 10px 20px;
+  float: left;
+}
+#footer .desarrollo {
+  height: 40px;
+  background: gray;
+  margin-top: 20px;
+}
+#footer .desarrollo p {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Nexa_Light";
+  line-height: 40px;
 }
