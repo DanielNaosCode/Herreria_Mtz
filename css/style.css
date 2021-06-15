@@ -1,3 +1,5 @@
+/* --------------------------------------------------------------- */
+/* FUENTES */
 @font-face {
   /*Con esta propiedad se mandan a llamar las fuentes que se quieren agregar al documento pero de manera local*/
   font-family: Nexa;
@@ -19,6 +21,8 @@
   src: url("../css/fonts/SG_Alternative_Mid.otf");
 }
 
+/* --------------------------------------------------------------- */
+/* GENERALES */
 * {
   margin: 0px;
   padding: 0px;
@@ -28,7 +32,8 @@
   float: none;
   clear: both;
 }
-
+/* --------------------------------------------------------------- */
+/* INICIO CABECERA */
 #header {
   margin: 10px auto;
   margin-left: 8px;
@@ -77,16 +82,20 @@
 
 #list ul li a:hover {
   color: #d51010;
-
   transform: scale(1.5, 1.5);
 }
 
+/* FIN CABECERA */
+
+/* -------------------------------------------------------------- */
+/* INICIO CONTENEDOR */
 #container {
   width: 98.9%;
   display: block;
   margin: 0px auto;
 }
-
+/* FIN DEL CONTENEDOR */
+/* INICIO SLIDE */
 #container #slide {
   width: 100%;
   height: 343px;
@@ -95,14 +104,17 @@
   background-position: -10px -285px;
   background-size: cover;
 }
+/* FIN SLIDE */
 
+/* INICIO CONTENEDOR INFO */
 #container .container_section {
   background: transparent;
   width: 100%;
   height: 570px;
   margin-top: 20px;
 }
-
+/* FIN CONTENEDOR INFO */
+/* INICIO ASIDE */
 #container #lateral {
   display: block;
   float: left;
@@ -158,9 +170,8 @@
   -webkit-transform: translate(20px, 0);
   /** Chrome & Safari **/
 }
-
-/* IMAGENES DERECHA */
-
+/* FIN DEL ASIDE */
+/* INICIO SECCION */
 #container .section {
   display: block;
   float: left;
@@ -209,7 +220,8 @@
   width: 160px;
   margin: 15px 15px 15px 15px;
 }
-
+/* FIN SECCION */
+/* INICIO NOSOTROS */
 #container #nosotros {
   background: #d51010;
   width: 98.6%;
@@ -232,7 +244,9 @@
   width: 94%;
   margin-left: 25px;
 }
-
+/* FIN NOSOTROS */
+/* ---------------------------------------------------------- */
+/* INICIO FOOTER */
 #footer {
   margin-top: 20px;
   height: 320px;
@@ -277,3 +291,4 @@
   font-family: "Nexa_Light";
   line-height: 40px;
 }
+/* FIN FOOTER */
